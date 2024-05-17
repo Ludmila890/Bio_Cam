@@ -1,8 +1,11 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -12,19 +15,44 @@ header {
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+#loginForm {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 footer {
@@ -32,6 +60,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+footer section {
+    margin: 0 auto;
 }
 
 /* Estilos específicos para los formularios */
@@ -74,4 +106,62 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #555;
+}
+
+/* Media Queries */
+
+/* Para tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    footer section {
+        float: none;
+        text-align: center;
+    }
+}
+
+/* Para dispositivos móviles (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #loginForm {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+/* Para escritorios y pantallas más grandes (min-width: 769px) */
+@media (min-width: 769px) {
+    main {
+        padding: 30px;
+    }
+
+    section {
+        margin-bottom: 3rem;
+    }
 }
