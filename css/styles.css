@@ -1,37 +1,125 @@
 /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-header {
+/* Estilos navegacion */
+
+.topnav {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+}
+
+.navItems {
+    list-style-type: none;
+    padding: 1rem;    
+}
+
+.navItems:hover {
+    background-color: #555;
+}
+
+.navItems a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navItems a:visited{
+    color: #fff;
+}
+
+/* Estilos header */
+
+#mainheader {
+    display: flex;
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Estilos areas */
+
+#areas {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    
+    /* border: solid red 2px; */
 }
 
-nav ul li {
+/* #area-logo {
+    border: solid white 2px;
+} */
+
+#area-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    
+}
+
+#area-search {
+    width: 40%;
+    /* border: solid white 2px; */
+    position: relative;
+    
+}
+
+#searchinput {
     display: inline;
-    margin-right: 10px;
+    width: 80%;
+    float: left;
+    align-items: center;
 }
 
-main {
-    padding: 20px;
+#btnsub {
+    float: right;
 }
+
+#area-redes {
+    display: flex;
+    justify-content: space-between;
+    /* border: solid white 2px; */
+}
+
+#area-users {
+    padding-right: 10px;
+}
+
+.info {
+    font-size: 12px;
+    width: 20%;
+    text-align: left;
+    padding: 0 5px 0 0;
+}
+
+.btn-redes {
+    align-items: center;
+    padding-right: 5px;
+}
+
+.btn-sep {
+    padding-right: 10px;
+}
+
+/* Estilos footer */
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Estilos específicos para los formularios */
