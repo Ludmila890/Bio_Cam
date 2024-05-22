@@ -127,101 +127,62 @@ footer section {
 }
 
 /* Estilos específicos para los formularios */
+
 form {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario en la página */
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+    display: block; /* Mostrar las etiquetas en una línea separada */
+    margin-bottom: 5px; /* Espacio entre etiquetas y campos de entrada */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Ancho completo para campos de entrada de texto, correo electrónico y textarea */
+    padding: 8px; /* Relleno interno */
+    margin-bottom: 10px; /* Espacio entre campos de entrada */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Ancho completo para select */
+    padding: 8px; /* Relleno interno */
+    margin-bottom: 10px; /* Espacio entre campos de entrada */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
-input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+input[type="submit"],
+button {
+    background-color: #333; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
 }
 
-input[type="submit"]:hover {
-    background-color: #555;
+input[type="submit"]:hover,
+button:hover {
+    background-color: #555; /* Cambio de color de fondo al pasar por encima */
 }
 
 /* Media Queries */
 
 /* Para tablets (max-width: 768px) */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    footer section {
-        float: none;
-        text-align: center;
+    .topnav {
+        display: none;
     }
 }
 
 /* Para dispositivos móviles (max-width: 480px) */
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-bottom: 5px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    #loginForm {
-        padding: 10px;
-    }
-
-    footer {
-        padding: 5px;
-    }
-}
-
-/* Para escritorios y pantallas más grandes (min-width: 769px) */
-@media (min-width: 769px) {
-    main {
-        padding: 30px;
-    }
-
-    section {
-        margin-bottom: 3rem;
+    footer p {
+        font-size: 0.8em;
     }
 }
