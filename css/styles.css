@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #ebebeb;
 }
 
 /* Estilos navegacion */
@@ -48,6 +49,7 @@ body {
     padding: 10px;
     text-align: center;
     justify-content: center;
+    position: relative;
 }
 
 /* header h1 {
@@ -85,14 +87,20 @@ main {
 
 #areas {
     display: flex;
-    /* width: 80%;     */
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
     justify-content: space-between;
+}
+
+#area-logo {
+    float: left;
 }
 
 #area-items {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    float: right;
 }
 
 #area-search {
@@ -105,6 +113,18 @@ main {
     width: 80%;
     float: left;
     align-items: center;
+}
+
+#btnsub {
+    align-items: center;
+    float: left;
+}
+
+.fa-magnifying-glass {
+    height: 28px;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 5px;   
 }
 
 #area-redes {
@@ -148,6 +168,70 @@ footer {
 footer section {
     margin: 0 auto;
 }
+
+/* Estilos imagen index */
+
+.setup-img {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Estilos categorías destacadas */
+
+#row {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    /* border: solid red 2px; */
+    justify-content: center;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 auto;
+    outline: 1px solid #eae6e6;
+}
+
+.card {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.card a i {
+    font-size: 2rem;
+}
+
+.column:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+#header-cat {
+    margin: 1rem auto;
+}
+/* 
+#cards-section {
+    display: flex;
+    border: solid aqua 2px;
+    position: relative;
+    justify-content: space-between;
+} */
+
+/* .card {
+    border: solid lightgray 2px;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 150px;
+} */
+
 
 /* Estilos específicos para los formularios */
 
