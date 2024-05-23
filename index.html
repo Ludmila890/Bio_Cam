@@ -19,8 +19,8 @@
             </div>
             <div id="area-search">
                 <form action="">
-                    <input type="text" name="searchinput" id="searchinput" placeholder="busqueda">
-                    <button type="submit" id="btnsub">Search</button>
+                    <input type="text" name="searchinput" id="searchinput" placeholder="Búsqueda">
+                    <button type="submit" id="btnsub">Buscar</button>
                 </form>                
             </div>
             <div id="area-items">
@@ -70,22 +70,43 @@
     </header>
 
     <nav class="topnav">
-        <!-- Agregando enlace a login.html -->
-        <li class="navItems"><a href="./login.html">Iniciar Sesión</a></li>
-        <li class="navItems"><a href="./sitio/pc-armadas.html">PC Armadas</a></li>
-        <li class="navItems"><a href="./sitio/hardware.html">Hardware</a></li>
-        <li class="navItems"><a href="./sitio/perifericos.html">Periféricos</a></li>
-        <li class="navItems"><a href="./sitio/notebooks.html">Notebooks</a></li>
-        <li class="navItems"><a href="./sitio/ver-todos.html">Ver todos</a></li>
-        <li class="navItems"><a href="./contact.html">Contacto</a></li>
+        <ul>
+            <li class="navItems"><a href="./login.html">Iniciar Sesión</a></li>
+            <li class="navItems"><a href="./sitio/pc-armadas.html">PC Armadas</a></li>
+            <li class="navItems"><a href="./sitio/hardware.html">Hardware</a></li>
+            <li class="navItems"><a href="./sitio/perifericos.html">Periféricos</a></li>
+            <li class="navItems"><a href="./sitio/notebooks.html">Notebooks</a></li>
+            <li class="navItems"><a href="./sitio/ver-todos.html">Ver todos</a></li>
+            <li class="navItems"><a href="./contact.html">Contacto</a></li>
+        </ul>
     </nav>
+
+    <main>
+        <div class="container">
+            <h2>Bienvenidos a Bio Cam</h2>
+
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
 
     <footer>
         <section>
-            <p>&copy; 2024 Mi Sitio Web</p>
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
         </section>
     </footer>
-    <script src="./js/login.js" defer></script> <!-- Script para cargar el formulario de inicio de sesión -->
-    <script src="js/registro.js" defer></script> <!-- Script para cargar el formulario de registro -->
+
+    <script src="./js/login.js" defer></script>
+    <script src="./js/registro.js" defer></script>
 </body>
 </html>
