@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Mi Sitio Web</title>
+    <title>Iniciar Sesión - Mi Sitio Web</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/276d8ed360.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="mainheader">
@@ -82,58 +81,45 @@
         </ul>
     </nav>
 
-    <section class="setup-img">
-        <img src="/img/168.png" alt="">
-    </section>
-
-    <div id="row">
-        <h2 id="header-cat">Categorías destacadas</h2>
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-solid fa-computer"></i></a>
-                <div class="card-text">PC Armadas</div>
-            </div>
-        </div>
-        
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-solid fa-display"></i></a>
-                <div class="card-text">Monitores</div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-solid fa-hard-drive"></i></a>
-                <div class="card-text">Discos Rígidos</div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-solid fa-keyboard"></i></a>
-                <div class="card-text">Teclados</div>
-            </div>
-        </div>
-
-    </div>
-
     <main>
         <div class="container">
-            <h2>Bienvenidos a Bio Cam</h2>
+            <fieldset class="reg-form">
+                <div class="brand-mark"></div>
+                <h2>Iniciar sesión</h2>
 
-            <form id="contactForm">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+                <form id="loginForm">
+                    <p>
+                        <label for="user_account_login">Tu correo electrónico:</label>
+                        <input class="text-input" id="user_account_login" name="user_account[login]" type="text">
+                    </p>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                    <p>
+                        <label for="user_account_password">Tu contraseña:</label>
+                        <input class="text-input" id="user_account_password" name="user_account[password]" type="password">
+                    </p>
 
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="remember">
+                        <input name="user_account[remember_me]" type="hidden" value="0">
+                        <input checked="checked" id="user_account_remember_me" name="user_account[remember_me]" type="checkbox" value="1"> 
+                        <label for="user_account_remember_me">Mantenerme conectado en esta computadora</label>
+                    </div>
 
-                <input type="submit" value="Enviar">
-            </form>
+                    <p class="sign-in-btn">
+                        <input class="button-primary" name="commit" type="submit" value="Iniciar sesión">
+                    </p>
+
+                    <div class="sign_in_links">
+                        <span class="note forgot">¿No tienes una cuenta? <a id="registerLink" href="#">Inscribirse</a></span>
+                        <span class="note forgot" style="text-align: right;">Ayuda: <a class="link-signup" href="/forgot_password">Olvidé mi contraseña</a></span>
+                    </div>
+                </form>
+            </fieldset>
+
+            <fieldset class="reg-form" id="registerContainer" style="display:none;">
+                <div class="brand-mark"></div>
+                <h2>Registro</h2>
+                <!-- El formulario de registro se generará dinámicamente aquí -->
+            </fieldset>
         </div>
     </main>
 
@@ -144,6 +130,6 @@
     </footer>
 
     <script src="./js/login.js" defer></script>
-    <script src="./js/registro.js" defer></script>
+    <script src="./js/register.js" defer></script>
 </body>
 </html>
