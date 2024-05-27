@@ -129,6 +129,20 @@ body {
     /* flex: 1; */
 }
 
+#btnsub {
+    padding: 0.5rem 1rem;
+    background-color: #005bb5;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#area-items {
+    display: flex;
+    align-items: center;
+}
+
 #area-redes {
     display: flex;
     align-items: center;
