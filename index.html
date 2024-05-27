@@ -1,149 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - Mi Sitio Web</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/276d8ed360.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/276d8ed360.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header id="mainheader">
-        <div id="areas">
-            <div id="area-logo">
-                <a href="">
-                    <img src="./img/biocam_logo.png" alt="" width="236" height="42">
-                </a>
-            </div>
-            <div id="area-search">
-                <form action="">
-                    <input type="text" name="searchinput" id="searchinput" placeholder="Búsqueda">
-                    <button type="submit" id="btnsub">Buscar</button>
-                </form>                
-            </div>
-            <div id="area-items">
-                <div id="area-redes">
-                    <div class="info">Nuestras redes</div>
-                    <div class="btn-redes">
-                        <a href="">
-                            <img src="./img/icn-nav-whatsapp.png" alt="">
-                        </a>
-                    </div>
-                    <div class="btn-redes">
-                        <a href="">
-                            <img src="./img/icn-nav-twitter.png" alt="">
-                        </a>
-                    </div>
-                    <div class="btn-redes">
-                        <a href="">
-                            <img src="./img/icn-nav-facebook.png" alt="">
-                        </a>
-                    </div>
-                    <div class="btn-redes">
-                        <a href="">
-                            <img src="./img/icn-nav-instagram.png" alt="">
-                        </a>
-                    </div>
-                    <div class="btn-redes">
-                        <a href="">
-                            <img src="./img/icn-nav-youtube.png" alt="">
-                        </a>
-                    </div>
-                    <div class="btn-sep">
-                        <img src="./img/icn-nav-separador.png" alt="">
-                    </div>
-                </div>
-                <div id="area-users">
-                    <a href="">
-                        <img src="./img/icn-nav-user.png" alt="">
-                    </a>
-                </div>
-                <div id="area-cart">
-                    <a href="">
-                        <img src="./img/icn-nav-cart.png" alt="">
-                    </a>
-                </div>
-            </div>
+      <div id="areas">
+        <div id="area-logo">
+          <a href="index.html">
+            <img src="./img/biocam_logo.png" alt="" width="236" height="42" />
+          </a>
         </div>
+        <div id="area-search">
+          <form action="">
+            <input
+              type="text"
+              name="searchinput"
+              id="searchinput"
+              placeholder="Búsqueda"
+            />
+            <div type="submit" id="btnsub">Buscar</div>
+          </form>
+        </div>
+        <div id="area-items">
+          <div id="area-redes">
+            <div class="info">Nuestras redes</div>
+            <div class="btn-redes">
+              <a href="">
+                <img src="./img/icn-nav-whatsapp.png" alt="" />
+              </a>
+            </div>
+            <div class="btn-redes">
+              <a href="">
+                <img src="./img/icn-nav-twitter.png" alt="" />
+              </a>
+            </div>
+            <div class="btn-redes">
+              <a href="">
+                <img src="./img/icn-nav-facebook.png" alt="" />
+              </a>
+            </div>
+            <div class="btn-redes">
+              <a href="">
+                <img src="./img/icn-nav-instagram.png" alt="" />
+              </a>
+            </div>
+            <div class="btn-redes">
+              <a href="">
+                <img src="./img/icn-nav-youtube.png" alt="" />
+              </a>
+            </div>
+            <div class="btn-sep">
+              <img src="./img/icn-nav-separador.png" alt="" />
+            </div>
+          </div>
+          <div id="area-users">
+            <a href="">
+              <img src="./img/icn-nav-user.png" alt="" />
+            </a>
+            <div class="dropdown-content">
+              <a href="login.html">Iniciar Sesión</a>
+            </div>
+          </div>
+          <div id="area-cart">
+            <a href="">
+              <img src="./img/icn-nav-cart.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <nav class="topnav">
-        <ul>
-            <li class="navItems"><a href="./login.html">Iniciar Sesión</a></li>
-            <li class="navItems"><a href="./sitio/pc-armadas.html">PC Armadas</a></li>
-            <li class="navItems"><a href="./sitio/hardware.html">Hardware</a></li>
-            <li class="navItems"><a href="./sitio/perifericos.html">Periféricos</a></li>
-            <li class="navItems"><a href="./sitio/notebooks.html">Notebooks</a></li>
-            <li class="navItems"><a href="./sitio/ver-todos.html">Ver todos</a></li>
-            <li class="navItems"><a href="./contact.html">Contacto</a></li>
-        </ul>
+    <nav id="topnav">
+      <div class="navItems">
+        <a href="index.html">Inicio</a>
+      </div>
+
+      <div class="navItems">
+        <a href="sitio/pc-armadas.html">PC Armadas</a>
+        <div class="dropdown-content">
+          <a href="">PC Gamer</a>
+          <a href="">PC Oficina</a>
+          <a href="">PC Workstation</a>
+        </div>
+      </div>
+
+      <div class="navItems">
+        <a href="sitio/hardware.html">Hardware</a>
+        <div class="dropdown-content">
+          <a href="">Placas de Video</a>
+          <a href="">Componentes</a>
+          <a href="">Almacenamiento</a>
+          <a href="">Memorias RAM</a>
+          <a href="">Procesadores</a>
+        </div>
+      </div>
+
+      <div class="navItems">
+        <a href="sitio/perifericos.html">Periféricos</a>
+        <div class="dropdown-content">
+          <a href="">Auriculares</a>
+          <a href="">Teclados y Mouses</a>
+          <a href="">Streaming</a>
+          <a href="">Accesorios</a>
+          <a href="">Otros</a>
+        </div>
+      </div>
+
+      <div class="navItems">
+        <a href="sitio/notebooks.html">Notebooks</a>
+        <div class="dropdown-content">
+          <a href="">Netbooks</a>
+          <a href="">Notebooks</a>
+          <a href="">Macbook</a>
+        </div>
+      </div>
+
+      <div class="navItems">
+        <a href="sitio/ver-todos.html">Ver todos</a>
+      </div>
+
+      <div class="navItems">
+        <a href="contact.html"> Contacto</a>
+      </div>
     </nav>
 
     <section class="setup-img">
-        <img src="/img/168.png" alt="">
+      <img src="/img/168.png" alt="" />
     </section>
 
     <div id="row">
-        <h2 id="header-cat">Categorías destacadas</h2>
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-solid fa-computer"></i></a>
-                <div class="card-text">PC Armadas</div>
-            </div>
+      <h2 id="header-cat">Categorías destacadas</h2>
+      <div class="column">
+        <div class="card">
+          <a href=""><i class="fa-solid fa-computer"></i></a>
+          <div class="card-text">PC Armadas</div>
         </div>
-        
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-solid fa-display"></i></a>
-                <div class="card-text">Monitores</div>
-            </div>
-        </div>
+      </div>
 
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-solid fa-hard-drive"></i></a>
-                <div class="card-text">Discos Rígidos</div>
-            </div>
+      <div class="column">
+        <div class="card">
+          <a href=""><i class="fa-solid fa-display"></i></a>
+          <div class="card-text">Monitores</div>
         </div>
+      </div>
 
-        <div class="column">
-            <div class="card">
-                <a href=""><i class="fa-solid fa-keyboard"></i></a>
-                <div class="card-text">Teclados</div>
-            </div>
+      <div class="column">
+        <div class="card">
+          <a href=""><i class="fa-solid fa-hard-drive"></i></a>
+          <div class="card-text">Discos Rígidos</div>
         </div>
+      </div>
 
+      <div class="column">
+        <div class="card">
+          <a href=""><i class="fa-solid fa-keyboard"></i></a>
+          <div class="card-text">Teclados</div>
+        </div>
+      </div>
     </div>
 
     <main>
-        <div class="container">
-            <h2>Bienvenidos a Bio Cam</h2>
+      <div class="container">
+        <h2>Servicios para empresas</h2>
 
-            <form id="contactForm">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+        <form id="contactForm">
+          <p>Comunicate con nosotros por tu presupuesto a medida.</p>
+          <label for="name">Nombre de empresa:</label>
+          <input type="text" id="name" name="name" required />
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
 
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
     </main>
 
     <footer>
-        <section>
-            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-        </section>
+      <section>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+      </section>
     </footer>
 
     <script src="./js/login.js" defer></script>
     <script src="./js/registro.js" defer></script>
-</body>
+  </body>
 </html>
