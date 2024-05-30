@@ -78,6 +78,7 @@ body {
 }
 
 /* Estilos header */
+
 #mainheader {
     background-color: #0073e6;
     color: white;
@@ -198,13 +199,13 @@ body {
     margin: 0 auto;
     justify-content: center;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 .column {
     float: left;
     width: 25%;
     padding: 0 auto;
-    outline: 1px solid #eae6e6;
 }
 
 .card {
@@ -212,13 +213,14 @@ body {
     justify-content: center;
     text-align: center;
     padding: 2rem;
+    outline: 1px solid #eae6e6;
 }
 
 .card a i {
     font-size: 2rem;
 }
 
-.column:hover {
+.card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
