@@ -12,8 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f7f9fc;
-    color: #333;
+    background-color: #f2f2f2;
+    /*color: #333;*/
 }
 
 /* Estilos navegacion */
@@ -84,8 +84,7 @@ body {
     color: white;
     padding: 1rem 0;
     text-align: center;
-    /* justify-content: center;
-    position: relative; */
+    border-bottom: solid white 3px;
 }
 
 #areas {
@@ -193,46 +192,66 @@ body {
 
 /* Estilos categorías destacadas */
 
-#row {
-    display: inline-block;
+.row {
+    display: block;
     width: 80%;
     margin: 0 auto;
     justify-content: center;
     padding: 1rem;
     flex-wrap: wrap;
+    max-width: 1200px;
 }
 
 .column {
     float: left;
     width: 25%;
-    padding: 0 auto;
+    padding: 0;
+    background-color: white;
 }
 
 .card {
     display: block;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
     padding: 2rem;
     outline: 1px solid #eae6e6;
+    overflow: hidden;
 }
 
 .card a i {
     font-size: 2rem;
 }
 
-.card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
 .card-text {
     font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-#header-cat {
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.header-cat {
     margin: 1rem auto;
 }
 
+/*Estilos marcas*/
+
+.column-marcas {
+    float: left;
+    width: 20%;
+    padding: 0;
+    background-color: white;
+}
+
 /* Estilos formulario index */
+
+#header-cform {
+    text-align: center;
+    margin: 1rem;
+}
 
 .container {
     display: block;
@@ -241,15 +260,38 @@ body {
     justify-content: center;
     padding-bottom: 1rem;
     border-radius: 5px;
-    background-color: #f2f2f2;
 }
 
-#contactForm {
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-between;
+#contact-form {
+    background-color: #e7e7e7;
+    width: 80%;
+    display: grid;
+    row-gap: 10px;
     margin: 2rem auto;
     padding: 2rem;
+}
+
+#name, #email {
+    box-sizing: border-box;
+    width: 60%;
+    height: 40px;
+}
+
+#name, #email, #message {
+    border: 2px solid #b7b6b6;
+}
+
+#message {
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+
+input[type='submit'] {
+    width: 30%;
+    height: 45px;
+    cursor: pointer;
 }
 
 /* Estilos específicos para los formularios */
