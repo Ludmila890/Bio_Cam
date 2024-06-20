@@ -39,8 +39,6 @@ body {
 
 .navItems:hover {
     background-color: #005bb5;
-    /* border-radius: 4px;
-    padding: 0.5rem 1rem; */
 }
 
 /* Estilos dropdown */
@@ -293,6 +291,118 @@ input[type='submit'] {
     height: 45px;
     cursor: pointer;
 }
+
+/*Estilos lista de productos*/
+
+#col-container {
+    display: flex;
+    justify-content: center;
+}
+
+#prod-container-grid {
+    float: right;
+    width: 85%;
+    padding: 2rem 2rem 2rem;
+    flex-wrap: wrap;
+}
+
+#prod-grid {
+    padding: 1rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 2rem;
+}
+
+/*Estilos cartas productos*/
+
+.prod-img {
+    width: 100%;
+}
+
+.prod-card-title {
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prod-card-price {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.prod-vermas {
+    background-color: #0073e6;
+    color: white;
+    font-size: 16px;
+    margin: 10px 10px;
+    padding: 1rem 0;
+    border: none;
+    width: 60%;
+}
+
+.prod-vermas:hover {
+    background-color: #005bb5;
+    cursor: pointer;
+}
+
+.prod-card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+/*Estilos columna categorias*/
+
+#cat-column {
+    width: 15%;
+    float: left;
+    display: inline-block;
+    background-color: #d7d7d7;
+    justify-content: center;
+    padding: 1rem 1rem;
+    margin-right: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-marcas-container, .row-columnas {
+    padding: 10px 0;
+}
+
+.headers-columnas {
+    padding: 10px 0;
+}
+
+.cat-header-link {
+    text-decoration: none;
+}
+
+.cat-header-link:visited {
+    color: black;
+}
+
+.lista-marcas-li {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.cat-links {
+    text-decoration: none;
+}
+
+.cat-links:visited {
+    color: #333333;
+}
+
+.cat-links:hover {
+
+}
+
 
 /* Estilos específicos para los formularios */
 .reg-form p {
