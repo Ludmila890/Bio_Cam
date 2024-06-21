@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var registerLink = document.getElementById("registerLink");
-    var registerContainer = document.getElementById("registerContainer");
+    const registerLink = document.getElementById("registerLink");
+    const registerContainer = document.getElementById("registerContainer");
 
     registerLink.addEventListener("click", function(event) {
         event.preventDefault();
         registerContainer.style.display = "block";
     });
 
-    var registerForm = document.createElement("form");
+    const registerForm = document.createElement("form");
     registerForm.id = "registerForm";
     registerForm.innerHTML = `
         <p>
@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
             <label for="passwordRegister">Contraseña:</label>
             <input type="password" id="passwordRegister" name="passwordRegister" required>
         </p>
+        <p>
+            <label for="termsCheckbox">
+                <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+                Acepto los términos y condiciones
+            </label>
+        </p>
         <p class="sign-in-btn">
             <button type="submit" class="button-primary">Registrarse</button>
         </p>
@@ -31,11 +37,18 @@ document.addEventListener("DOMContentLoaded", function() {
     registerForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        var username = document.getElementById("usernameRegister").value;
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("passwordRegister").value;
+        const username = document.getElementById("usernameRegister").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("passwordRegister").value;
 
-        var formData = {
+        // Verificar si el checkbox está marcado
+        const termsCheckbox = document.getElementById("termsCheckbox");
+        if (!termsCheckbox.checked) {
+            alert("Debes aceptar los términos y condiciones para registrarte.");
+            return;
+        }
+
+        const formData = {
             username: username,
             email: email,
             password: password

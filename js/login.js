@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var userIconLink = document.querySelector("#area-users a");
-    var loginContainer = document.getElementById("loginContainer");
+    const userIconLink = document.querySelector("#area-users a");
+    const loginContainer = document.getElementById("loginContainer");
 
     userIconLink.addEventListener("click", function(event) {
         event.preventDefault();
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             loginContainer.innerHTML = "";
         } else {
             // Crea y agrega el formulario de inicio de sesión al contenedor
-            var loginForm = document.createElement("form");
+            const loginForm = document.createElement("form");
             loginForm.id = "loginForm";
             loginForm.innerHTML = `
                 <label for="usernameLogin">Usuario:</label>

@@ -1,10 +1,10 @@
 function validarFormulario() {
-    var nombre = document.getElementById('nombre').value;
-    var email = document.getElementById('email').value;
-    var motivo = document.getElementById('motivo').value;
-    var mensaje = document.getElementById('mensaje').value;
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const motivo = document.getElementById('motivo').value;
+    const mensaje = document.getElementById('mensaje').value;
     
-    if (nombre.trim() === '' || email.trim() === '' || motivo === '' || mensaje.trim() === '') {
+    if (nombre.trim() === '' || email.trim() === '' || motivo.trim() === '' || mensaje.trim() === '') {
         alert('Todos los campos son obligatorios');
         return false;
     }
