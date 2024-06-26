@@ -30,7 +30,7 @@ function createProductCard(p) {
     // imagen
     let productImg = document.createElement('img');
     productImg.classList.add('prod-img');
-    productImg.src = '../img/product-placeholder.png';
+    productImg.src = p.thumbnailImage;
 
     // se agregan elementos a la card
     productCard.appendChild(productImg);

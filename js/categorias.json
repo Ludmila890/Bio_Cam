@@ -23,7 +23,7 @@
     {
       "name": "Almacenamiento",
       "subcategories": [
-        {"name": "Discos SATA"},
+        {"name": "Discos Rígidos"},
         {"name": "Discos Externos"},
         {"name": "Discos SSD"}
       ]
@@ -43,10 +43,6 @@
     },
     {
       "name": "Notebooks"
-    },
-    {
-      "name": "Otros",
-      "subcategories": ["Consolas", "Bici Eléctrica", "Monopatín Eléctrico", "Tablet y ebooks", "Celulares", "Servidores", "Estabilizadores", "Smart Home", "Smart Watch"]
     },
     {
       "name": "Monitores"
